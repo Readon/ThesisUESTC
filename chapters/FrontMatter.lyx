@@ -6,8 +6,7 @@
 \origin unavailable
 \textclass thesis-uestc
 \begin_preamble
-%Created by jmcui 
-%\graphicspath{{C:/Users/jmcui/Desktop/Lyxthesis/USTCthesis}}
+
 \end_preamble
 \options doctor
 \use_default_options false

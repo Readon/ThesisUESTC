@@ -5,13 +5,6 @@
 \save_transient_properties true
 \origin unavailable
 \textclass thesis-uestc
-\begin_preamble
-%Created by jmcui 
-
-\usepackage{bibentry,natbib}
-\usepackage{hyperref}
-%\graphicspath{{figures/}}
-\end_preamble
 \options doctor,twoside
 \use_default_options false
 \master ../Main.lyx
