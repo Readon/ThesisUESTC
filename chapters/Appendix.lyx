@@ -16,7 +16,6 @@
 \use_default_options false
 \master ../Main.lyx
 \begin_modules
-theorems-ams
 algorithm2e
 \end_modules
 \maintain_unincluded_children false
