@@ -248,13 +248,14 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename F:/workspace/ThesisUESTC/pic/logo.pdf
+	filename ../pic/logo.pdf
 	lyxscale 20
-	width 5cm
+	width 45text%
 
 \end_inset
 
@@ -262,7 +263,13 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-USTC Logo
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:UESTC-Logo"
+
+\end_inset
+
+UESTC Logo
 \end_layout
 
 \end_inset
@@ -276,13 +283,14 @@ USTC Logo
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename F:/workspace/ThesisUESTC/pic/pica.pdf
+	filename ../pic/pica.pdf
 	lyxscale 30
-	width 4cm
+	width 45text%
 
 \end_inset
 
@@ -290,7 +298,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-USTC Name
+UESTC Name
 \end_layout
 
 \end_inset
@@ -310,7 +318,7 @@ name "fig:USTC-Elements"
 
 \end_inset
 
-USTC Elements
+UESTC Elements
 \end_layout
 
 \end_inset
@@ -878,8 +886,67 @@ name "subsec:引用标签"
 
 \begin_layout Standard
 光标放到需要标记的环境或者文本中，然后选择 插入\SpecialChar menuseparator
-交叉引用， 选择引用的标签。也可以直接使用工具栏上的插入交叉引用工具。注意有多种引用方式可以选择的，右键点击交叉
-引用的对象可以看到几种引用的对象：
+交叉引用， 选择引用的标签。也可以直接使用工具栏上的插入交叉引用工具。常见的引用有如下几种：
+\end_layout
+
+\begin_layout Itemize
+图片： 图
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:USTC-Elements"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+子图： 图
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:UESTC-Logo"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+公式： 公式
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:energy"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+表格： 表
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:atoms"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+注意有多种引用方式可以选择的，右键点击交叉引用的对象可以看到几种引用的对象：
 \end_layout
 
 \begin_layout Enumerate
@@ -1084,6 +1151,18 @@ name "thm:algebra"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Proof
+这里证明上面的定理或者推论。
+\end_layout
+
+\begin_layout Corollary
+推论是通过定理推导出结论。
+\end_layout
+
+\begin_layout Lemma
+引理是推导出的中间结论可以作为后面推论证明的基础。
 \end_layout
 
 \begin_layout Section
@@ -1340,143 +1419,16 @@ error = [0,0,1,1,1,1] # Variable flag to trigger Frame.ErrorAlert()
 \end_layout
 
 \begin_layout Standard
-本模版已经预定义好的href，用来更友好地插入超链接。
+本模版支持LyX直接插入超链接。
 \end_layout
 
 \begin_layout Standard
 菜单 插入\SpecialChar menuseparator
-自定义内嵌项\SpecialChar menuseparator
-href
+超链接
 \end_layout
 
 \begin_layout Standard
-文字直接写入，而链接通过插入参数。鼠标右键点击链接对象，调出菜单，点'Link'。
-\end_layout
-
-\begin_layout Standard
-下面是一个超链接例子。如有需求可以直接复制这个例子，修改即可。
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex href
-status open
-
-\begin_layout Plain Layout
-中国科学技术大学学位论文LyX模板
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-https://github.com/jmcui/USTC-Lyx
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-这通过定义Lyx中InsetLayout实现的，实现可以参考USTCthesis.layou文件，主要定义部分如下：
-\end_layout
-
-\begin_layout Standard
-\begin_inset listings
-lstparams "numbers=left,numberstyle={\tiny},stepnumber=1,basicstyle={\footnotesize},breaklines=true,showstringspaces=false,tabsize=4,frame=shadowbox,commentstyle={\color{red!50!green!50!blue!50}},rulesepcolor={\color{red!20!green!20!blue!20}},keywordstyle={\color{blue!90}\bfseries},stringstyle={\ttfamily},keepspaces=true,breakindent=22pt,flexiblecolumns=true,breakautoindent=true,breakindent=4em,texcl=true,aboveskip=1em"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-InsetLayout Flex:href 
-\end_layout
-
-\begin_layout Plain Layout
-
-LyXType         custom 
-\end_layout
-
-\begin_layout Plain Layout
-
-# LyXType       element 
-\end_layout
-
-\begin_layout Plain Layout
-
-LabelString 	超链接
-\end_layout
-
-\begin_layout Plain Layout
-
-LatexType       Command
-\end_layout
-
-\begin_layout Plain Layout
-
-LatexName       href
-\end_layout
-
-\begin_layout Plain Layout
-
-Decoration 	 Classic
-\end_layout
-
-\begin_layout Plain Layout
-
-Argument 1
-\end_layout
-
-\begin_layout Plain Layout
-
-	Mandatory 1 	
-\end_layout
-
-\begin_layout Plain Layout
-
-	LabelString 	"Link"
-\end_layout
-
-\begin_layout Plain Layout
-
-	LabelFont
-\end_layout
-
-\begin_layout Plain Layout
-
-  		Shape         Up
-\end_layout
-
-\begin_layout Plain Layout
-
-  		Color         blue
-\end_layout
-
-\begin_layout Plain Layout
-
-	EndFont
-\end_layout
-
-\begin_layout Plain Layout
-
-EndArgument
-\end_layout
-
-\begin_layout Plain Layout
-
-End
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-参考这个例子，可以自己定义新的InsetLayout，来对应latex命令。相比直接插入latex命令，定义Layout后，显示会更友好、方便。
+按照菜单选项填入对应文字和链接即可。
 \end_layout
 
 \begin_layout Section
@@ -1556,6 +1508,14 @@ status open
 
 \begin_layout Section
 特殊章节
+\end_layout
+
+\begin_layout Standard
+特殊章节不需要编号，如致谢，外文资料原文等。
+\end_layout
+
+\begin_layout Standard
+使用ChapterSpecial风格可以创建该类章节。
 \end_layout
 
 \begin_layout Section
