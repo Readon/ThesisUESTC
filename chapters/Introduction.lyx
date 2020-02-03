@@ -10,7 +10,7 @@
 
 
 \usepackage{xcolor}
-\usepackage{hyperref}
+%\usepackage{hyperref}
 %\graphicspath{{figures/}}
 \end_preamble
 \options doctor,twoside
@@ -157,52 +157,30 @@ NoStyle      Cover
 \end_layout
 
 \begin_layout Standard
-主要前两点，引入latex优点的同时，克服直接编辑文本不友好、不直观问题，避免反复编译文档而浪费时间。因此可以极大提高撰写论文的效率。设计本论文模版的目的就是为
-了方便广大USTCer攥写学位论文。
+主要前两点，引入Latex优点的同时，克服直接编辑文本不友好、不直观问题，避免反复编译文档而浪费时间。因此可以极大提高撰写论文的效率。设计本论文模版的目的就是为
+了方便广大UESTCer攥写学位论文。
 \end_layout
 
 \begin_layout Standard
-本LyX模版的底层就是ustcthesis模版，
-\begin_inset Flex href
-status open
-
-\begin_layout Plain Layout
-github链接
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-https://github.com/ustctug/ustcthesis
-\end_layout
+本LyX模版的底层就是ThesisUESTC模版，
+\begin_inset CommandInset href
+LatexCommand href
+name "github链接"
+target "https://github.com/x-magus/ThesisUESTC"
+literal "false"
 
 \end_inset
 
-
-\end_layout
-
-\end_inset
-
-。感谢众多USTCer的努力，这个模版已经是研究生院认可的学位论文模版
-\begin_inset Flex href
-status open
-
-\begin_layout Plain Layout
-学位论文模版
-\begin_inset Argument 1
-status collapsed
-
-\begin_layout Plain Layout
-https://gradschool.ustc.edu.cn/ylb/xw.html
-\end_layout
+。感谢众多UESTCer的努力，这个模版已经是符合研究生院要求的学位论文模版
+\begin_inset CommandInset href
+LatexCommand href
+name "学位论文模板"
+target "http://gr.uestc.edu.cn/xiazai/114/3917"
+literal "false"
 
 \end_inset
 
-
-\end_layout
-
-\end_inset
-
-。 本LyX模版主要在ustcthesis模版加了一个LyX层(USTCtheisis.layout文件)。
+。 本LyX模版主要在ThesisUESTC模版加了一个LyX层(thesis-uestc.layout文件)。
 \end_layout
 
 \begin_layout Standard
@@ -219,6 +197,19 @@ noprefix "false"
 章。编辑论文时，很多格式可以直接从这一章中直接copy。
 \end_layout
 
+\begin_layout Standard
+本模板基于中科大LyX模板修改，基础项目地址为
+\begin_inset CommandInset href
+LatexCommand href
+name "USTCLyX"
+target "https://github.com/ustctug/ustclyx"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Section
 如何 \SpecialChar LyX
 
@@ -229,22 +220,48 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-请参考ustcthesis中的
-\begin_inset Flex href
-status open
-
-\begin_layout Plain Layout
-新手指南
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-https://github.com/ustctug/ustcthesis/wiki/新手指南
-\end_layout
+请参考USTCthesis中的
+\begin_inset CommandInset href
+LatexCommand href
+name "新手指南"
+target "https://github.com/USTCtug/USTCthesis/wiki/新手指南"
+literal "false"
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status collapsed
+
+\begin_layout Plain Layout
+推荐国内在线安装, 注意选择 “Change default repository”，并且选择中国科大的 mirror：
+\end_layout
+
+\begin_layout Itemize
+Windows系统： http://mirrors.USTC.edu.cn/CTAN/systems/texlive/tlnet/install-tl-windows.
+exe
+\end_layout
+
+\begin_layout Itemize
+其他系统： http://mirrors.USTC.edu.cn/CTAN/systems/texlive/tlnet/install-tl-unx.tar.gz
 \end_layout
 
 \end_inset
@@ -275,91 +292,21 @@ http://www.lyx.org/
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
-USTCer 推荐校内在线安装, 注意选择 “Change default repository”，并且选择中国科大的 mirror：
-\end_layout
-
-\begin_layout Itemize
-Windows系统： http://mirrors.ustc.edu.cn/CTAN/systems/texlive/tlnet/install-tl-windows.
-exe 
-\end_layout
-
-\begin_layout Itemize
-其他系统： http://mirrors.ustc.edu.cn/CTAN/systems/texlive/tlnet/install-tl-unx.tar.gz
- 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsection
 下载模版
 \end_layout
 
 \begin_layout Standard
-本模版使用了ustcthesis项目，作为一个git子模块。克隆或者下载时，注意确认ustcthesis中所有文件都已下载，并保持文件夹名和相对路径。
- 
-\end_layout
-
-\begin_layout Standard
-可以使用git clone --recursive，将所有文件都下载下来：
-\end_layout
-
-\begin_layout Standard
-\begin_inset listings
-lstparams "numbers=left,numberstyle={\tiny},stepnumber=1,basicstyle={\footnotesize},breaklines=true,showstringspaces=false,tabsize=4,frame=shadowbox,commentstyle={\color{red!50!green!50!blue!50}},rulesepcolor={\color{red!20!green!20!blue!20}},keywordstyle={\color{blue!90}\bfseries},stringstyle={\ttfamily},keepspaces=true,breakindent=22pt,flexiblecolumns=true,breakautoindent=true,breakindent=4em,texcl=true,aboveskip=1em"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-git clone --recursive https://github.com/jmcui/USTC-Lyx.git
-\end_layout
+本模版使用了
+\begin_inset CommandInset href
+LatexCommand href
+name "ThesisUESTC项目"
+target "https://github.com/x-magus/ThesisUESTC"
+literal "false"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-或者从科大Lug服务器上git下来 
-\end_layout
-
-\begin_layout Standard
-\begin_inset listings
-lstparams "numbers=left,numberstyle={\tiny},stepnumber=1,basicstyle={\footnotesize},breaklines=true,showstringspaces=false,tabsize=4,frame=shadowbox,commentstyle={\color{red!50!green!50!blue!50}},rulesepcolor={\color{red!20!green!20!blue!20}},keywordstyle={\color{blue!90}\bfseries},stringstyle={\ttfamily},keepspaces=true,breakindent=22pt,flexiblecolumns=true,breakautoindent=true,breakindent=4em,texcl=true,aboveskip=1em"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-git clone --recursive https://git.lug.ustc.edu.cn/jmcui/ustclyx.git
-\end_layout
-
-\end_inset
-
-
+，作为该项目的一个分支进行管理。克隆或者下载后可直使用该项目文件。
 \end_layout
 
 \begin_layout Subsection
@@ -379,7 +326,15 @@ doctor 博士模版
 \end_layout
 
 \begin_layout Description
+engdoctor 工程博士模版
+\end_layout
+
+\begin_layout Description
 master 硕士模版 
+\end_layout
+
+\begin_layout Description
+promaster 专业硕士模板
 \end_layout
 
 \begin_layout Description
@@ -434,12 +389,12 @@ status open
 \end_layout
 
 \begin_layout Standard
-本Lyx模版的latex使用ustcthesis模版。本模版主要在ustcthesis模版上加了一个Lyx layout层 (USTCtheisis.layout
-文件)，在此基础上定义了一些常用的命令，以方便编辑文档。
+本Lyx模版的latex使用ThesisUESTC模版。本模版主要在ThesisUESTC模版上加了一个Lyx layout层 (thesis-uestc.lay
+out文件)，在此基础上定义了一些常用的命令，以方便编辑文档。
 \end_layout
 
 \begin_layout Standard
-ustcthesis中模版选项：
+ThesisUESTC中模版选项：
 \end_layout
 
 \begin_layout Standard
@@ -455,21 +410,7 @@ status open
 
 \begin_layout Plain Layout
 
-doctor|master|bachelor [academic|professional] [chinese|english] [print|pdf]
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-% 参考文献选项 
-\end_layout
-
-\begin_layout Plain Layout
-
-[super|numebers|authoryear]
+doctor|engdoctor|master|promaster|bachelor [,english]
 \end_layout
 
 \end_inset
@@ -478,49 +419,15 @@ doctor|master|bachelor [academic|professional] [chinese|english] [print|pdf]
 \end_layout
 
 \begin_layout Standard
-详细请参考ustcthesis模版选项.
+详细请参考ThesisUESTC模版选项.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Flex href
-status open
-
-\begin_layout Plain Layout
-ustcthesis模版on github
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-https://github.com/ustctug/ustcthesis
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex href
-status open
-
-\begin_layout Plain Layout
-ustcthesis模版 on ustc lug
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-https://git.lug.ustc.edu.cn/ustctug/ustcthesis
-\end_layout
-
-\end_inset
-
-
-\end_layout
+\begin_inset CommandInset href
+LatexCommand href
+name "ThesisUESTC模板on github"
+target "https://github.com/x-magus/ThesisUESTC"
+literal "false"
 
 \end_inset
 

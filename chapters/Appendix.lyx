@@ -62,7 +62,7 @@ NoStyle	EnglishAbstract
 \pdf_pdfusetitle false
 \papersize default
 \use_geometry false
-\use_package amsmath 2
+\use_package amsmath 0
 \use_package amssymb 2
 \use_package cancel 1
 \use_package esint 2
