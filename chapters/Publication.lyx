@@ -96,6 +96,19 @@ NoStyle	EnglishAbstract
 
 \begin_body
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+该文件暂时未使用，模板已经提供了可靠的生成机制，请不要理会该文件。
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout ChapterSpecial
 在读期间发表的学术论文与取得的研究成果
 \end_layout
