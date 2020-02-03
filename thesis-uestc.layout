@@ -15,13 +15,18 @@ Preamble
 		\markboth{#1}{#1}
 }
 
+%%图、表的格式化引用
+\newrefformat{fig}{\hyperref[#1]{图\ref*{#1}\,}}
+\newrefformat{eq}{\hyperref[#1]{式\ref*{#1}\,}}
+\newrefformat{tab}{\hyperref[#1]{表\ref*{#1}\,}}
+
 EndPreamble
 
 
 Input stdclass.inc
 Input numreport.inc
 
-Requires amsmath,amsthm
+Requires amsmath,amsthm,hyperref,prettyref
 
 Sides           2
 PageStyle       Headings

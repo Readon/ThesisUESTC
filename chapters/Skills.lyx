@@ -890,9 +890,9 @@ name "subsec:引用标签"
 \end_layout
 
 \begin_layout Itemize
-图片： 图
+图片： 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "fig:USTC-Elements"
 plural "false"
 caps "false"
@@ -904,9 +904,9 @@ noprefix "false"
 \end_layout
 
 \begin_layout Itemize
-子图： 图
+子图： 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "fig:UESTC-Logo"
 plural "false"
 caps "false"
@@ -918,9 +918,9 @@ noprefix "false"
 \end_layout
 
 \begin_layout Itemize
-公式： 公式
+公式： 
 \begin_inset CommandInset ref
-LatexCommand eqref
+LatexCommand formatted
 reference "eq:energy"
 plural "false"
 caps "false"
@@ -932,9 +932,9 @@ noprefix "false"
 \end_layout
 
 \begin_layout Itemize
-表格： 表
+表格： 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand formatted
 reference "tab:atoms"
 plural "false"
 caps "false"
