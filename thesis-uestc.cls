@@ -33,6 +33,7 @@
 \setlength{\heavyrulewidth}{0.5pt}
 \setlength{\lightrulewidth}{0.5pt}
 \setlength{\arrayrulewidth}{0.5pt}
+\setlength{\cmidrulewidth}{0.5pt}
 
 \RequirePackage{setspace}
 \RequirePackage{multirow}
@@ -69,7 +70,7 @@
 \fi
 \fi
 
-\DeclareMathAlphabet{\mathbf}{\eu@enc}{\eu@mathrm}{bx}{it}
+\DeclareMathAlphabet{\mathbf}{\eu@enc}{\eu@mathrm}{\bfdefault}{it}
 \newcommand{\bm}{\mathbf}
 
 \RequirePackage{zhnumber}
@@ -96,7 +97,6 @@
 \RequirePackage{fancyhdr}
 \RequirePackage{titlesec}
 \RequirePackage{appendix}
-\RequirePackage{setspace}
 \RequirePackage{cite}
 \RequirePackage[normalem]{ulem}
 \RequirePackage{enumitem}
@@ -114,8 +114,8 @@
 \graphicspath{{./pic/}}
 
 \RequirePackage[titles]{tocloft}
-\RequirePackage[font=small,subrefformat=parens,labelformat=simple]{subfig}
-\captionsetup[sub]{font=small, belowskip=6pt}
+\RequirePackage[labelformat=simple]{subfig}
+\captionsetup[subfigure]{font=small, belowskip=6pt, width=36pt}
 \renewcommand{\thesubfigure}{(\alph{subfigure})}
 \newcommand{\floatcontinue}{\end{figure}\clearpage\begin{figure}[tb]\ContinuedFloat}
 
@@ -150,7 +150,7 @@
 \captionsetup{format=hang}
 \captionsetup{width=\textwidth - 42pt}
 \captionsetup[figure]{aboveskip=6pt, belowskip=0pt}
-\captionsetup[table]{aboveskip=6pt, belowskip=0pt}
+\captionsetup[table]{aboveskip=9pt, belowskip=0pt}
 
 \setlength{\intextsep}{9pt}
 
